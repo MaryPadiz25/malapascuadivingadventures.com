@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener("DOMContentLoaded", function() {
     var privacyArticle2 = document.getElementById("privacyArticle2");
   var privacyPolicy = document.getElementById("privacyPolicy");
-   var closeArticle = document.getElementById("closePrivacy");
+   var closeArticle = document.getElementById("closeArticle");
   
     setTimeout(function() { privacyArticle2.style.display = "none"; });
     privacyPolicy.addEventListener("click", function() {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener("DOMContentLoaded", function() {
     var privacyArticle3 = document.getElementById("privacyArticle3");
     var privacyTerms2 = document.getElementById("privacyTerms2");
-     var closeArticle3 = document.getElementById("closePrivacy");
+     var closeArticle3 = document.getElementById("closeArticle3");
   
     setTimeout(function() { privacyArticle3.style.display = "none"; });
     privacyTerms2.addEventListener("click", function() {
