@@ -218,6 +218,9 @@ header nav ul li a{
 header nav ul li a:hover {
     color: #c70039;
 }
+.active {
+    color: #c70039;
+}
 
 .contacts {
     right:5%;
@@ -414,7 +417,7 @@ color: #C70039;
 
 @media (max-width: 599.95px) {
 html, body{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .policy {
     display: none;
@@ -509,7 +512,7 @@ header .site-title{
     font-size: 1.8rem;
     margin-left: 1%;
     width: 100%;
-    max-width: 230px;
+    max-width: 250px;
 }
                 
 header .wrappers {  
