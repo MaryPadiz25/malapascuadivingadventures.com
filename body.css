@@ -1,1035 +1,192 @@
 
 @media (min-width:600px) {
-     .title {
+.title {
     font-size: 3rem;
     text-align: center;
     color: white;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
-    font-family: 'Playfair Display', serif;
+    font-family: 'open sans';
 }
  .carousel-container {
-            width:100%;
-            justify-items: center;
-        }
+    width:100%;
+    justify-items: center;
+    margin-bottom: 3%;
+}
+.carousel {
+    display: flex;
+    gap: 5px;
+}
+.slide {
+    flex: 0 0 auto; 
+    width: 250px;
+    scroll-snap-align: start;
+    text-align: center;
+    padding: 1% 1%;;
+    background-color: #efe3e34d;
+}
+.slide img {
+    width:fit-content;
+    height: 120px;
+    border-radius: 10px;
+}
 
-        .carousel {
-            display: flex;
-            gap: 5px;
-        }
-        
-        .slide {
-            flex: 0 0 auto;
-            width: 250px; /* Adjust as needed */
-            scroll-snap-align: start;
-             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.345);
-            padding: 1% 1%;
-        }
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel-container a {
+    font-weight: 400;
+    text-decoration: none;
+    color:black;
+    font-size: 1.2rem;
+}
 
-        .slide img {
-            width:fit-content;
-            height: 120px;
-            border-radius: 10px;
-
-        }
-
-        .carousel::-webkit-scrollbar {
-            display: none; /* Hide scrollbar */
-        }
-          
-    .carousel-container a {
-         font-weight: 400;
-         text-decoration: none;
-          color:black;
-        font-size: 1.2rem;
-    }
-    
-
-    .carousel-container a:hover{
-        opacity:0.5 ;
-    }
-
-
-
-   .content{
-      position: relative;
-      width: 100%;
-   }
-   .new{
-      width: 55%;
-      position: relative;
-      float: right;
-      margin-right: 5%;
-      margin-left: 5%;
-
-      }
+.carousel-container a:hover{
+    opacity:0.5 ;
+ }
+}
    
-   }
- 
-
-    @media (max-width:599.99px){
-    .title {
-    font-size: 2rem;
+@media (max-width:599.99px){
+.title {
+    font-size: 1.5rem;
     text-align: center;
     color: white;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
-    font-family: 'Playfair Display', serif;
+    font-family: 'open sans';
 }
  .carousel-container {
-overflow-x: scroll;
-            width:100%;
-            height:100%;
-            justify-items: center;
-        }
-
-        .carousel {
-            display: flex;
-            gap: 5px;
-        }
-        
-        .slide {
-            margin-left: 15%;
-            margin-right: 15%;
-            flex: 0 0 auto;
-            width: 70%; 
-            scroll-snap-align: start;
-             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 1% 3%;
-        }
-
-        .slide img {
-            width:fit-content;
-            height: 100px;
-            border-radius: 10px;
-
-        }
-
-        .carousel::-webkit-scrollbar {
-            display: none; /* Hide scrollbar */
-        }
-          
-    .carousel-container a {
-         font-weight: 400;
-         text-decoration: none;
-          color:black;
-        font-size: 1.6rem;
-    }
-    
-
-    .carousel-container a:hover{
-        opacity:0.5 ;
-    }
-
-    }
- @media (min-width:1020px){
-  .content {
-    display: inline;
-    position: relative;
-    z-index:1;
-    width: 100%;
-    margin: auto;
-    
-}
-
-/* Dive Section Styling */
-.divenation, .dn3dives {
-    width: 62%;
-float: right;
-right: 1%;
-    padding: .5%;
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: white;
-    margin-top: 1%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in-out;
-}
-
-
-
-/* Image Container */
-.image-container {
-    width: 30%;
-    position: relative;
-    float: left;
-    max-width: 300px;
-    overflow-y: hidden;
-    max-height: 200px;
-}
-
-.mySlides {
-    display: block;
-    max-height: 200px;
-    width: 100%;
-    border-radius: 10px;
-
-}
-
-
-/* Info Section */
-.dive-info {
-    width: 42%;
-    padding: 5px;
-}
-
-.dive-times h2 {
-
-    font-size: 1.8rem;
-    color: #005D94;
-}
-
-.dive-times p {
-    
-    font-family: sans-serif;
-    font-size: 1.1rem;
-}
-
-/* Dive Shop */
-.dive-shop {
-    background-color: whitesmoke;
-    padding: 5px;
-    border-radius: 8px;
-}
-
-.dive-shop .ssi {
-    width: 15%;
-    border-radius: 50%;
-}
-
-/* Price Section */
-.price {
-    width: 30%;
-    text-align: center;
-}
-
-.price h2 {
-    font-size: 2.5rem;
-    color: red;
-}
-
-.price p {
-    font-family: sans-serif;
-    font-size: 1.1rem;
-}
-
-.price .view-details {
-    width: 80%;
-    padding: 10px;
-    background-color: #005D94;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-family: sans-serif;
-    transition: 0.3s ease-in-out;
-}
-
-.view-details:hover {
-    background-color: #0056b3;
-}
-
-
-    .faq{ box-sizing: border-box;
-             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-             width: 100%;
-            padding: 1% 1%;
-            
-            }
-            .faq h2,h3{
-                padding: 1% 0;
-                overflow-wrap: break-word;
-                hyphens: auto;
-                word-spacing: -.5px;
-                font-family: Playfair Display;
-                text-align: center;
-                position:relative;
-                font-size: 1.9rem;
-                color:black;
-                line-height: 25px;
-                }         
-            .faq div{position: relative;
-                padding: 4%;
-                 }
-            .faq p{
-                overflow-wrap: break-word;
-                hyphens: auto;
-                text-align: justify;
-                word-spacing: -.5px;
-                color: black;
-                font-family:sans-serif;
-                font-weight: 300;
-                font-size:1.1rem;
-                }
-                .faq p strong{
-                    color: rgb(255, 96, 10);
-                    font-family: sans-serif;
-                    font-weight: bold;
-                    font-size:1.2rem;
-                    }
-                    .dive{width:50%;
-                        box-sizing:border-box;
-    margin-right: 25%;
-                     margin-left: 25%;
-                    }
-      
-        
-            .article{ 
-                background:rgba(249, 253, 253, 0.778);
-                height: auto;
-                box-sizing: border-box;
-                align-self: center;
-                position: flex;
-                padding-bottom:1% ;
-                padding: 5%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in-out;
-                }
-            .article h3{
-                color: rgb(16, 97, 36);
-                font-family: sans-serif;
-                font-weight: bold;
-                font-size:1.3rem;
-                text-align: center;
-            }
-            .article p{
-                margin-top: 2%;
-                letter-spacing:.5px;
-                word-spacing: -.5px;
-                overflow-wrap: break-word;
-                text-align: justify;
-                hyphens: auto;
-                color: black;
-                font-family: sans-serif;
-                font-weight: 300;
-                font-size:1.1rem;
-                line-height: 25px;
-                
-                }    
-
-
-                  .blog{ box-sizing: border-box;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            box-shadow: 2px 5px 5px #000;
-            padding: 1%;
-            width: 100%;    
-            }
-.left{
-    margin-left: 1%;
-    width: 30%;
-}
- }
- @media (min-width:730px) and (max-width:1019.98px){
-  .content {
-    display: inline;
-    position: relative;
-    z-index:1;
-    width: 100%;
-    margin: auto;
-    
-}
-
-/* Dive Section Styling */
-.divenation, .dn3dives {
-    width: 66%;
-float: right;
-right: 1%;
-    padding: .5%;
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: white;
-    margin-top: 1%;
-   
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in-out;
-}
-
-
-
-/* Image Container */
-.image-container {
-    width: 30%;position: relative; float: left;
-    max-height: 150px;
-    max-width: 300px;
-    overflow-y: hidden;
-}
-
-.mySlides {
-      max-height: 150px;
-    display:block;
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-/* Info Section */
-.dive-info {
-    width: 42%;
-    padding: 5px;
-}
-
-.dive-times h2 {
-
-    font-size: 1.5rem;
-    color: #005D94;
-}
-
-.dive-times p {
-    
-    font-family: sans-serif;
-    font-size: 1rem;
-}
-
-/* Dive Shop */
-.dive-shop {
-    background-color: whitesmoke;
-    padding: 1px;
-    border-radius: 8px;
-}
-
-.dive-shop .ssi {
-    width: 15%;
-    border-radius: 50%;
-}
-
-/* Price Section */
-.price {
-    width: 35%;
-    text-align: center;
-}
-
-.price h2 {
-    font-size: 1.4rem;
-    color: red;
-}
-
-.price p {
-    font-family: sans-serif;
-    font-size: 1rem;
-}
-
-.price .view-details {
-    width: 80%;
-    padding: 10px;
-    background-color: #005D94;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-family: sans-serif;
-    transition: 0.3s ease-in-out;
-}
-
-.view-details:hover {
-    background-color: #0056b3;
-}
-
-
-    .faq{ box-sizing: border-box;
-             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-             width: 100%;
-            padding: 1% 1%;
-            
-            }
-            .faq h2,h3{
-                padding: 1% 0;
-                overflow-wrap: break-word;
-                hyphens: auto;
-                word-spacing: -.5px;
-                font-family: Playfair Display;
-                text-align: center;
-                position:relative;
-                font-size: 1.9rem;
-                color:black;
-                line-height: 25px;
-                }         
-            .faq div{position: relative;
-                padding: 4%;
-                 }
-            .faq p{
-                overflow-wrap: break-word;
-                hyphens: auto;
-                text-align: justify;
-                word-spacing: -.5px;
-                color: black;
-                font-family:sans-serif;
-                font-weight: 300;
-                font-size:1.1rem;
-                }
-                .faq p strong{
-                    color: rgb(255, 96, 10);
-                    font-family: sans-serif;
-                    font-weight: bold;
-                    font-size:1.2rem;
-                    }
-                    .dive{width:50%;
-                        box-sizing:border-box;
-    margin-right: 25%;
-                     margin-left: 25%;
-                    }
-      
-        
-            .article{ 
-                background:rgba(249, 253, 253, 0.778);
-                height: auto;
-                box-sizing: border-box;
-                align-self: center;
-                position: flex;
-                padding-bottom:1% ;
-                padding: 5%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in-out;
-                }
-            .article h3{
-                color: rgb(16, 97, 36);
-                font-family: sans-serif;
-                font-weight: bold;
-                font-size:1.3rem;
-                text-align: center;
-            }
-            .article p{
-                margin-top: 2%;
-                letter-spacing:.5px;
-                word-spacing: -.5px;
-                overflow-wrap: break-word;
-                text-align: justify;
-                hyphens: auto;
-                color: black;
-                font-family: sans-serif;
-                font-weight: 300;
-                font-size:1.1rem;
-                line-height: 25px;
-                
-                }    
-
-
-                  .blog{ box-sizing: border-box;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            box-shadow: 2px 5px 5px #000;
-            padding: 1%;
-            width: 100%;    
-            }
-.left{
-    margin-left: 1%;
-    width: 31%;
-}
- }
-  @media (min-width:645px) and (max-width:729.98px){
-  .content {
-    display: inline;
-    position: relative;
-    z-index:1;
-    width: 100%;
-    margin: auto;
-    
-}
-
-/* Dive Section Styling */
-.divenation, .dn3dives {
-    width: 98%;
-    left: 1%;
-    padding: .5%;
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: white;
-    margin-top: 1%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in-out;
-}
-
-
-
-/* Image Container */
-.image-container {
-    width: 35%;position: relative; float: left;
-    max-height: 150px;
-    overflow-x: hidden;
-}
-
-.mySlides {
-    max-height: 150px;
-    display: block;
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-/* Info Section */
-.dive-info {
-    width: 40%;
-    padding: 2px;
-}
-
-.dive-times h2 {
-
-    font-size: 1.5rem;
-    color: #005D94;
-}
-
-.dive-times p {
-    
-    font-family: sans-serif;
-    font-size: 1.1rem;
-}
-
-/* Dive Shop */
-.dive-shop {
-    background-color: whitesmoke;
-    padding: 1px;
-    border-radius: 8px;
-}
-
-.dive-shop .ssi {
-    width: 15%;
-    border-radius: 50%;
-}
-
-/* Price Section */
-.price {
-    width: 30%;
-    text-align: center;
-}
-
-.price h2 {
-    font-size: 1.8rem;
-    color: red;
-}
-
-.price p {
-    font-family: sans-serif;
-    font-size: 1.1rem;
-}
-
-.price .view-details {
-    width: 80%;
-    padding: 10px;
-    background-color: #005D94;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-family: sans-serif;
-    transition: 0.3s ease-in-out;
-}
-
-.view-details:hover {
-    background-color: #0056b3;
-}
-
-
-    .faq{ box-sizing: border-box;
-             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-             width: 100%;
-            padding: 1% 1%;
-            
-            }
-            .faq h2,h3{
-                padding: 1% 0;
-                overflow-wrap: break-word;
-                hyphens: auto;
-                word-spacing: -.5px;
-                font-family: Playfair Display;
-                text-align: center;
-                position:relative;
-                font-size: 2rem;
-                color:black;
-                line-height: 25px;
-                }         
-            .faq div{position: relative;
-                padding: 4%;
-                 }
-            .faq p{
-                overflow-wrap: break-word;
-                hyphens: auto;
-                text-align: justify;
-                word-spacing: -.5px;
-                color: black;
-                font-family:sans-serif;
-                font-weight: 300;
-                font-size:1.2rem;
-                }
-                .faq p strong{
-                    color: rgb(255, 96, 10);
-                    font-family: sans-serif;
-                    font-weight: bold;
-                    font-size:1.3rem;
-                    }
-                    .dive{width:50%;
-                        box-sizing:border-box;
-    margin-right: 25%;
-                     margin-left: 25%;
-                    }
-      
-        
-            .article{ 
-                background:rgba(249, 253, 253, 0.778);
-                height: auto;
-                box-sizing: border-box;
-                align-self: center;
-                position: flex;
-                padding-bottom:1% ;
-                padding: 5%;
-           
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in-out;
-                }
-            .article h3{
-                color: rgb(16, 97, 36);
-                font-family: sans-serif;
-                font-weight: bold;
-                font-size:1.5rem;
-                text-align: center;
-            }
-            .article p{
-                margin-top: 2%;
-                letter-spacing:.5px;
-                word-spacing: -.5px;
-                overflow-wrap: break-word;
-                text-align: justify;
-                hyphens: auto;
-                color: black;
-                font-family: sans-serif;
-                font-weight: 300;
-                font-size:1.1rem;
-                line-height: 25px;
-                
-                }    
-
-
-                  .blog{ box-sizing: border-box;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            box-shadow: 2px 5px 5px #000;
-            padding: 1%;
-            width: 100%;    
-            }
-.left{
-    margin-left: 1%;
-    width: 98%;
-}
- }
-   @media (min-width:450px) and (max-width:644.98px){
-  .content {
-    display: block;
-    position: relative;
-    z-index:1;
-    width: 100%;
-    margin: auto;
-    
-}
-
-/* Dive Section Styling */
-.divenation, .dn3dives {
-    width: 98%;
-    left: 1%;
-    padding: .5%;
-      display: block;
-    position: relative;
-    align-items: center;
-    background-color: white;
-    margin-top: 1%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in-out;
-}
-
-
-
-/* Image Container */
-.image-container {
-    width: 100%;
-    position: relative; 
+    overflow-x: scroll;
+    width:100%;
     justify-items: center;
-    max-width: 400px;
-    max-height: 300px;
-    overflow-y: hidden;
+    margin-bottom: 3%;
 }
-
-.mySlides {
-     max-height: 300px;
-    display: block;
-    width: 40%;
-    border-radius: 10px;
+.carousel {
+    display: flex;
 }
-
-
-/* Info Section */
-.dive-info {
-    display: inline-block;
-    width: 50%;
-    float: left;
-    padding: 2%;
-}
-
-.dive-times h2 {
-
-    font-size: 1.5rem;
-    color: #005D94;
-}
-
-.dive-times p {
-    
-    font-family: sans-serif;
-    font-size: 1.1rem;
-}
-
-/* Dive Shop */
-.dive-shop {
-    background-color: whitesmoke;
-    padding: 1px;
-    border-radius: 8px;
-}
-
-.dive-shop .ssi {
-    width: 15%;
-    border-radius: 50%;
-}
-
-/* Price Section */
-.price {
-    float: right;
-    right:1%;
-    width: 40%;
+.slide {
+    margin-left: 15%;
+    margin-right: 15%;
+    flex: 0 0 auto;
+    width: 70%; 
+    scroll-snap-align: start;
     text-align: center;
-}
-
-.price h2 {
-    font-size: 1.8rem;
-    color: red;
-}
-
-.price p {
-    font-family: sans-serif;
-    font-size: 1.1rem;
-}
-
-.price .view-details {
-    width: 80%;
-    padding: 10px;
-    background-color: #005D94;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-family: sans-serif;
-    transition: 0.3s ease-in-out;
-}
-
-.view-details:hover {
-    background-color: #0056b3;
-}
-
-
-    .faq{ box-sizing: border-box;
-             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-             width: 100%;
-            padding: 1% 1%;
-            
-            }
-            .faq h2,h3{
-                padding: 1% 0;
-                overflow-wrap: break-word;
-                hyphens: auto;
-                word-spacing: -.5px;
-                font-family: Playfair Display;
-                text-align: center;
-                position:relative;
-                font-size: 2rem;
-                color:black;
-                line-height: 25px;
-                }         
-            .faq div{position: relative;
-                padding: 4%;
-                 }
-            .faq p{
-                overflow-wrap: break-word;
-                hyphens: auto;
-                text-align: justify;
-                word-spacing: -.5px;
-                color: black;
-                font-family:sans-serif;
-                font-weight: 300;
-                font-size:1.2rem;
-                }
-                .faq p strong{
-                    color: rgb(255, 96, 10);
-                    font-family: sans-serif;
-                    font-weight: bold;
-                    font-size:1.3rem;
-                    }
-                    .dive{width:50%;
-                        box-sizing:border-box;
-    margin-right: 25%;
-                     margin-left: 25%;
-                    }
-      
-        
-            .article{ 
-                background:rgba(249, 253, 253, 0.778);
-                height: auto;
-                box-sizing: border-box;
-                align-self: center;
-                position: flex;
-                padding-bottom:1% ;
-                padding: 5%;
-           
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in-out;
-                }
-            .article h3{
-                color: rgb(16, 97, 36);
-                font-family: sans-serif;
-                font-weight: bold;
-                font-size:1.5rem;
-                text-align: center;
-            }
-            .article p{
-                margin-top: 2%;
-                letter-spacing:.5px;
-                word-spacing: -.5px;
-                overflow-wrap: break-word;
-                text-align: justify;
-                hyphens: auto;
-                color: black;
-                font-family: sans-serif;
-                font-weight: 300;
-                font-size:1.1rem;
-                line-height: 25px;
-                
-                }    
-
-
-                  .blog{ box-sizing: border-box;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            box-shadow: 2px 5px 5px #000;
-            padding: 1%;
-            width: 100%;    
-            }
-.left{
-    width: 98%;
-    margin-left: 1%;
-}
- }
-    @media(max-width:449.98px){
-  .content {
-    display: block;
-    position: relative;
-    z-index:1;
-    width: 100%;
-    margin: auto;
-    
-}
-
-/* Dive Section Styling */
-.divenation, .dn3dives {
-    width: 98%;
-    left: 1%;
-    padding: .5%;
-      display: block;
-    position: relative;
-    align-items: center;
-    background-color: white;
-    margin-top: 1%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in-out;
-}
-
-
-
-/* Image Container */
-.image-container {
-    width: 100%;
-    position: relative; 
-    justify-items: center;
-    max-width: 600px;
-    max-height: 150px;
-    overflow-y: hidden;
-}
-
-.mySlides {
-    display: block;
-    width: 50%;
+    padding: 3%;
+    background-color: #efe3e34d;
+} 
+.slide img {
+    width:fit-content;
+    height: 100px;
     border-radius: 10px;
-    max-height: 150px;
 }
-
-
-/* Info Section */
-.dive-info {
-    display: inline-block;
-    width: 48%;
-    float: left;
-    padding: 1%;
+.carousel::-webkit-scrollbar {
+    display: none;
 }
-
-.dive-times h2 {
-
+.carousel-container a {
+    font-weight: 400;
+    text-decoration: none;
+    color:black;
     font-size: 1.2rem;
+}
+.carousel-container a:hover{
+    opacity:0.5 ;
+ }
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    z-index:1;
+    margin: auto;
+    display: block;
+}
+
+.divenation, .dn3dives {
+    display: block;
+    position: relative;
+    align-items: center;
+    background: rgb(236, 235, 235);
+    margin-top: 1%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 1%;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 0.6s ease-in;
+}
+.dn3dives.visible, .divenation.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.image-container {
+    width: 100%;
+    position: relative; 
+    justify-items: center;
+}
+.frame1, .frame2{
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all .8s ease-out;
+}
+.frame1.visible, .frame2.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+.mySlides {
+    overflow-y: hidden;
+    display: block;
+    width: 50%;
+    border-radius: 10px;
+    max-height: 200px;
+    margin-bottom: 2%;
+}
+.dive-info {
+    display: inline;
+    width: 50%;
+    float: left;
+}
+.dive-times h2 {
     color: #005D94;
+    font-family: 'open sans', sans-serif;
 }
-
 .dive-times p {
-    
     font-family: sans-serif;
-    font-size: 1rem;
+    line-height: 1.2;
 }
-
-/* Dive Shop */
 .dive-shop {
-    background-color: whitesmoke;
-    padding: 1px;
+    width: 100%;
+    margin-top: 5%;
     border-radius: 8px;
+    position: relative;
+    display: inline-flex;
 }
-
-.dive-shop .ssi {
-    width: 15%;
-    border-radius: 50%;
+.dive-shop p{
+    margin-top: 10%;
+    font-family: sans-serif;
 }
-
-/* Price Section */
 .price {
     float: right;
-    right:1%;
-    width: 52%;
-    text-align: center;
+    width:49%;
 }
-
 .price h2 {
-    font-size: 1.5rem;
     color: red;
+    text-align: right;
 }
-
 .price p {
     font-family: sans-serif;
-    font-size: 1rem;
+    width: 100%;
 }
-
 .price .view-details {
-    width: 80%;
+    float: right;
+    width: 100%;
+    max-width: 150px;
     padding: 10px;
-    background-color: #005D94;
+    background: linear-gradient(to right, #ff5733, #c70039);
     color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -1037,103 +194,147 @@ right: 1%;
     font-family: sans-serif;
     transition: 0.3s ease-in-out;
 }
-
 .view-details:hover {
-    background-color: #0056b3;
+    transform: scale(1.1);
 }
 
-
-    .faq{ box-sizing: border-box;
-             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-             width: 100%;
-            padding: 1% 1%;
-            
-            }
-            .faq h2,h3{
-                padding: 1% 0;
-                overflow-wrap: break-word;
-                hyphens: auto;
-                word-spacing: -.5px;
-                font-family: Playfair Display;
-                text-align: center;
-                position:relative;
-                font-size: 1.5rem;
-                color:black;
-                line-height: 25px;
-                }         
-            .faq div{position: relative;
-                padding: 4%;
-                 }
-            .faq p{
-                overflow-wrap: break-word;
-                hyphens: auto;
-                text-align: justify;
-                word-spacing: -.5px;
-                color: black;
-                font-family:sans-serif;
-                font-weight: 300;
-                font-size:1.1rem;
-                }
-                .faq p strong{
-                    color: rgb(255, 96, 10);
-                    font-family: sans-serif;
-                    font-weight: bold;
-                    font-size:1.2rem;
-                    }
-                    .dive{width:50%;
-                        box-sizing:border-box;
-    margin-right: 25%;
-                     margin-left: 25%;
-                    }
-      
-        
-            .article{ 
-                background:rgba(249, 253, 253, 0.778);
-                height: auto;
-                box-sizing: border-box;
-                align-self: center;
-                position: flex;
-                padding-bottom:1% ;
-                padding: 5%;
-           
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+.article{ 
+    background:rgba(244, 245, 243, 0.889);
+    height: auto;
+    box-sizing: border-box;
+    align-self: center;
+    position: flex;
     transition: 0.3s ease-in-out;
-                }
-            .article h3{
-                color: rgb(16, 97, 36);
-                font-family: sans-serif;
-                font-weight: bold;
-                font-size:1.5rem;
-                text-align: center;
-            }
-            .article p{
-                margin-top: 2%;
-                letter-spacing:.5px;
-                word-spacing: -.5px;
-                overflow-wrap: break-word;
-                text-align: justify;
-                hyphens: auto;
-                color: black;
-                font-family: sans-serif;
-                font-weight: 300;
-                font-size:1.1rem;
-                line-height: 25px;
-                
-                }    
-
-
-                  .blog{ box-sizing: border-box;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            box-shadow: 2px 5px 5px #000;
-            padding: 1%;
-            width: 100%;    
-            }
-.left{
-    width: 98%;
-    margin-left: 1%;
 }
- }
+.faq{ 
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height:30px;
+}
+.faq h2{
+    padding: 1% 0;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    word-spacing: -.5px;
+    font-family: 'open sans';
+    text-align: center;
+    position:relative;
+    color:black;
+}         
+.faq div{
+    position: relative;
+    padding: 4%;
+}
+.faq p{
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+    word-spacing: 0;
+    color: black;
+    font-family:sans-serif;
+    font-weight: 100;
+}
+.faq p strong{
+    color: rgb(255, 96, 10);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.dive{
+    width:50%;
+    box-sizing:border-box;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+@media (min-width:830px){
+.divenation, .dn3dives {
+    float: right;
+    margin-right: 10%;
+    margin-left: 5%;
+    width: 45%;
+}
+.dive-times h2 {
+    font-size: 1.5rem;
+}
+.dive-times p {
+    font-size: 1rem;
+}
+.dive-shop .ssi {
+    width: 20%;
+    border-radius: 50%;
+}
+.dive-shop p{
+    font-size: 1rem;
+}
+.price h2 {
+    font-size: 1.8rem;
+}
+.price p {
+    font-size: 1rem;
+}
+.left{
+    margin-left: 10%;
+    width: 30%;
+}
+
+.article{ 
+    margin-top: 2%;
+}
+.faq h2, h3{
+    font-size: 1.9rem;
+} 
+.faq p{
+    font-size:1.125rem;
+}
+.faq p strong{
+    font-size:1.2rem;
+}
+}
+@media(max-width:829.98px){
+.divenation, .dn3dives {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+}
+.dive-times h2 {
+    font-size: 1.2rem;
+    
+}
+.dive-times p {
+    font-size: .9rem;
+}
+.dive-shop .ssi {
+    width: 20%;
+    border-radius: 50%;
+}
+.dive-shop p{
+    width: 80%;
+    font-size: .9rem;
+}
+.price h2 {
+    font-size: 1.5rem;
+}
+.price p {
+    font-size: .9rem;
+}
+.left{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.article{ 
+    margin-top: 1%;
+}
+.faq h2, h3{
+    font-size: 1.125rem;
+} 
+.faq p{
+    font-size:1rem;
+}
+.faq p strong{
+    font-size:1rem;
+}
+}
