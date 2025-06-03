@@ -215,11 +215,14 @@
 <script>
 window.addEventListener("scroll", function() {
     let banner = document.querySelector(".banner");
+    let body = document.querySelector("body");
 
     if (window.scrollY > 50) {
         banner.classList.remove("visible"); // Slide up when scrolling down
+        body.style.paddingTop = "0"; // Remove extra padding
     } else {
         banner.classList.add("visible"); // Slide down when at the top
+        body.style.paddingTop = "120px"; // Add extra padding
     }
 });
 </script>
