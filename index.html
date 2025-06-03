@@ -229,7 +229,7 @@ window.addEventListener("scroll", function() {
 });
 </script>
 </div>
-<div class="top">
+<div class="top"> 
         <a href="https://malapascuadivingadventures.com" class="site-title">Malapascua Diving Adventures</a>   
  <div class="wrappers">
         <input type="checkbox" id="toggle">
@@ -244,7 +244,7 @@ window.addEventListener("scroll", function() {
                 <li><a href="https://malapascuadivingadventures.com/frequentlyaskquestions-malapascua">FAQ's</a></li>&nbsp;&nbsp;&nbsp;
       <div class="dropdown">
                     <input type="checkbox" id="diving-toggle">
-                    <label for="diving-toggle" class="dropdown-btn">Diving ⬇</label>&nbsp;&nbsp;&nbsp;
+                    <label for="diving-toggle" class="dropdown-btn">Diving ⬇</label>
                     <ul class="dropdown-content">
                         <li><a href="https://malapascuadivingadventures.com/fundiving-malapascua.html">Fun Diving</a></li>
                         <li><a href="https://malapascuadivingadventures.com/divecourses-malapascua">Courses</a></li>
@@ -252,7 +252,7 @@ window.addEventListener("scroll", function() {
                     </ul>
                 </div>
 
-                <!-- Dropdown - Activities -->
+    
                 <div class="dropdown">
                     <input type="checkbox" id="activities-toggle">
                     <label for="activities-toggle" class="dropdown-btn">Activities ⬇</label>
@@ -280,40 +280,42 @@ window.addEventListener("scroll", function() {
 
         <div class="slide">
             <img src="islandsmall.jpg" alt="Malapascua Island - Top Diving Destination">
-            <h2><a href="#malapascuaisland">Malapascua Island: Exceptional diving with thresher sharks</a></h2>
+            <h2><a href="#malapascuaisland">
+                <strong>Malapascua Island:</strong> <br>Exceptional diving with thresher sharks</a></h2>
         </div>
         <div class="slide">
             <img src="DiveBuddy1small.JPG" alt="Diving Buddy - Malapascua Experience">
-            <h2><a href="#malapascuadiving">Malapascua Diving: Unparalleled experience for all divers</a></h2>
+            <h2><a href="#malapascuadiving">
+                <strong>Malapascua Diving:</strong> <br>Unparalleled experience for all divers</a></h2>
         </div>
         <div class="slide">
             <img src="safetyStopsmall.JPG" alt="Diver Safety Stop at Malapascua">
-            <h2><a href="#ssivspadi">SSI vs PADI: Choosing the best diving certification</a></h2>
+            <h2><a href="#ssivspadi">
+                <strong>SSI vs PADI:</strong> <br>Choosing the best diving certification</a></h2>
         </div>
          <div class="slide">
              <img src="ThresherMalapascuasmall.JPG" alt="Article Picture">
-              <h2><a href="#threshershark">Thresher Shark Diving an extraordinary experience that attracts divers from all over the world.</a></h2>
+              <h2><a href="#threshershark">
+                <strong>Thresher Shark Diving</strong> <br>an extraordinary experience that attracts divers from all over the world.</a></h2>
         </div>
         <div class="slide">
                <img src="dvdiverssmall.jpg" alt="Article Picture">
-               <h2><a href="#malapascuadivingcommunity">Malapascua Diving Community, divers who come together to explore the island's beauty.</a></h2>
+               <h2><a href="#malapascuadivingcommunity">
+                <strong> Diving Community:</strong><br> divers who come together to explore the island's beauty.</a></h2>
         </div>
         <div class="slide">
             <img src="diver2small.JPG" alt="Article Picture">
-            <h2><a href="#top5divesites">Top 5 Malapascua Dive Sitesfor Beginners and Advanced Divers</a></h2>
+            <h2><a href="#top5divesites">
+                <strong>Top 5 Dive Sites: </strong> <br>for Beginners and Advanced Divers</a></h2>
         </div>
     </div>
 </div>
 <script>
   const carousel = document.querySelector('.carousel');
-
-// Wheel scrolling (for desktops)
 carousel.addEventListener('wheel', (event) => {
     event.preventDefault();
     carousel.scrollLeft += event.deltaY;
 });
-
-// Touch move (for mobile)
 let startX;
 carousel.addEventListener('touchstart', (event) => {
     startX = event.touches[0].clientX;
@@ -420,7 +422,6 @@ carousel.addEventListener('touchmove', (event) => {
         <div class="price">
             
             <h2>PHP 600.00</h2>
-                <br><p> per person min. of 3</p>
             
             <button onclick="location.href='snorkeling-malapascua';" class="view-details">View Details</button>
             
@@ -431,28 +432,44 @@ carousel.addEventListener('touchmove', (event) => {
             </p>
         </div>
         </div>     
-        <div class="dn3dives">
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".dn3dives, .divenation, .frame1, .frame2");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.3 }); // Adjust threshold for earlier/later activation
+
+    sections.forEach(section => observer.observe(section));
+});
+        </script>   
+        <div class="left">
+                  <iframe class="frame1"src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61573062737125%2Fvideos%2F970065291988775%2F&show_text=false&width=560&t=0" width="98%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true">Dive Vlog</iframe>
+             <iframe class="frame2" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02JQzFLvPALfijmT1egHcc5C1jRpPE6YcEStr2o5mgKnpQxzmVjZPVNpMVmTFsYgi5l%26id%3D61573062737125&show_text=true&width=auto" width="98%" height="700px" style="border:none;overflow:show" scrolling="yes" frameborder="0" allowTransparency="true">Facebook Page</iframe>
+            </div>
+</div>
+<div class="article">
         
                 
                 <div class="faq">      
-                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61573062737125%2Fvideos%2F970065291988775%2F&show_text=false&width=560&t=0" width="98%" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-             <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02JQzFLvPALfijmT1egHcc5C1jRpPE6YcEStr2o5mgKnpQxzmVjZPVNpMVmTFsYgi5l%26id%3D61573062737125&show_text=true&width=auto" width="98%" height="700px" style="border:none;overflow:show" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
-
-                    <h3>HOW TO GET TO MALAPASCUA ISLAND?<h3> 
-    <p><strong>BOOK Private Transfer with us:</strong>
-        <br>-We will arrange a private transfer from Mactan-Cebu International Airport or from your accomodation directly to Maya Port 
-        <br> -From Maya Port, we'll take you in a private boat to Malapascua Island.
-        <br><br><strong>By Private Transport:</strong>
-        <br>  -Take a taxi or private car from Mactan-Cebu International Airport to Maya Port in Daanbantayan, Cebu. This journey takes approximately 3 to 4 hours, depending on traffic conditions.
-        <br>  -From Maya Port, board a public or private boat to Malapascua Island. The boat ride typically takes around 30 to 45 minutes, depending on sea conditions.
-    <br><br><strong>By Public Transport:</strong> 
-    <br> -Take a taxi or private car from Mactan-Cebu International Airport to the North Bus Terminal in Cebu City.
-                    <br>   -Board a Ceres Bus bound for Maya Port in Daanbantayan. The bus journey takes approximately 4 to 5 hours.
-                    <br>    -From Maya Port, take a public or private boat to Malapascua Island.
-                    </p><br>  
+              
+                    <h2>HOW TO GET TO MALAPASCUA ISLAND?<h2> 
+    <p><strong>BOOK Private Transfer with us:</strong></p>
+        <p>✔We will arrange a private transfer from Mactan-Cebu International Airport or from your accomodation directly to Maya Port 
+        </p><p>✔From Maya Port, we'll take you in a private boat to Malapascua Island.
+        <p><strong>By Public Transport:</strong></p>
+    <p> ✔Take a taxi or private car from Mactan-Cebu International Airport to the North Bus Terminal in Cebu City.
+       </p><p> ✔Board a Ceres Bus bound for Maya Port in Daanbantayan. The bus journey takes approximately 4 to 5 hours.
+                   <p>✔From Maya Port, take a public or private boat to Malapascua Island.
+                    </p>
+                   <hr>
+                    <br>  
                         <img  src="island.jpg" id="malapascuaisland" class="dive" alt="Diving Malapascua" title="Diving Malapascua offers an exceptional Thresher Shark encounter.">
-                    <br><h2>
-                            Malapascua Island</h2> 
+                    <br><h2>Malapascua Island</h2> 
                             
                             <p> is renowned for its exceptional diving, especially for thresher shark encounters. It offers rich marine biodiversity, including vibrant coral reefs and diverse marine life. The island's dive sites cater to all levels of divers and feature opportunities for macro photography and wreck diving. With year-round diving conditions, Malapascua is a top destination for unforgettable underwater experiences.
                             </p> 
@@ -480,7 +497,7 @@ carousel.addEventListener('touchmove', (event) => {
                         <p>
                             Malapascua is home to several reputable dive shops and liveaboards that cater to divers of all levels. These dive centers offer guided tours, equipment rentals, and expert advice to ensure a safe and enjoyable diving experience.
                         </p>
-            <br><br>
+            <br><hr><br>
             <img src="DiveBuddy1.JPG" id="malapascuadiving" class="dive" alt="Diving Malapascua" title="Diving Malapascua offers an exceptional Thresher Shark encounter.">
           <br>  <h2 >Malapascua Diving: A Premier Underwater Experience</h2>
     
@@ -510,7 +527,7 @@ carousel.addEventListener('touchmove', (event) => {
             <br><p><strong>Conclusion</strong></p>
             
             <p>In summary, Malapascua Diving offers an extraordinary underwater experience that is hard to match. With its diverse marine life, beautiful dive sites, and welcoming community, it's no wonder that Malapascua Diving is a top choice for divers worldwide. Whether you're chasing thresher sharks or exploring vibrant coral reefs, Malapascua Diving promises an unforgettable adventure.</p>
-         <br><br>
+         <br><hr><br>
          <img src="safetyStop.JPG" id="ssivspadi" class="dive" alt="Diving Malapascua" title="Diving Malapascua offers an exceptional Thresher Shark encounter.">
             <h2 >SSI vs PADI: Choosing the Right Diving Certification</h2>
             <p>When it comes to scuba diving certifications, two of the most recognized organizations are Scuba Schools International (SSI) and Professional Association of Diving Instructors (PADI). Both offer comprehensive training programs, but there are some key differences that might help you decide which one is right for you.</p>
@@ -538,7 +555,7 @@ carousel.addEventListener('touchmove', (event) => {
             <p>In conclusion, both SSI and PADI offer excellent training programs, but the choice ultimately depends on your personal preferences and diving goals. Whether you choose SSI or PADI, you'll be well-prepared to explore the underwater world safely and enjoyably.</p>
     
     
-         <br><br>
+         <br><hr><br>
          <img src="ThresherMalapascua.JPG" id="threshershark" class="dive" alt="Diving Malapascua" title="Diving Malapascua offers an exceptional Thresher Shark encounter.">
          <h2>Unforgettable Thresher Shark Diving Adventures in Malapascua</h2>
 
@@ -552,7 +569,7 @@ carousel.addEventListener('touchmove', (event) => {
          <br>
          <p>In conclusion, if you're looking for an unforgettable diving adventure, consider thresher shark diving in Malapascua. With its rich marine biodiversity and the thrilling experience of seeing thresher sharks up close, diving Malapascua is sure to be a highlight of any diving enthusiast's journey.</p>
          <br>
-            
+            <hr>
          <br>
          <img src="dvdivers.jpg" id="malapascuadivingcommunity" class="dive" alt="Diving Malapascua" title="Diving Malapascua offers an exceptional Thresher Shark encounter.">
        
@@ -568,7 +585,7 @@ carousel.addEventListener('touchmove', (event) => {
          
          <p>In conclusion, Diving Malapascua offers an extraordinary underwater adventure that is hard to match. With its diverse marine life, beautiful dive sites, and welcoming community, it's no wonder that Diving Malapascua has become a top choice for divers worldwide. Whether you're eager to see thresher sharks or explore vibrant coral reefs, Diving Malapascua promises an unforgettable experience.</p>
          
-        <br>
+        <br><hr>
         <br>
         <img src="diver2.JPG" id="top5divesites" class="dive" alt="Diving Malapascua" title="Diving Malapascua offers an exceptional Thresher Shark encounter.">
       
@@ -577,9 +594,9 @@ carousel.addEventListener('touchmove', (event) => {
        <p><strong>1. Kimud Shoal: The Thresher Shark Encounter</strong></p>
        <p>Kimud Shoal is the crown jewel of Malapascua diving, famous for its regular sightings of thresher sharks. These sharks are typically seen during early morning dives, attracted by the cleaning stations located on the shoal.</p>
        <p>Highlights:</p>
-       <p>- Early morning thresher shark sightings</p>
-       <p>- Cleaning stations with various cleaner fish</p>
-       <p>- Occasional manta ray encounters</p>
+       <p>✔Early morning thresher shark sightings</p>
+       <p>✔Cleaning stations with various cleaner fish</p>
+       <p>✔Occasional manta ray encounters</p>
       <br>   
        <p><strong>2. Gato Island: Tunnel and Marine Life Haven</strong> </p>
        <p>Gato Island offers a mix of underwater experiences, including a famous tunnel dive that’s safe for both beginners and experienced divers. The island is a marine reserve teeming with life.</p>
@@ -610,7 +627,7 @@ carousel.addEventListener('touchmove', (event) => {
        <p>- Varied topography with sandy slopes and coral patches</p>
        <p>- Shallow dive site with a maximum depth of 18 meters</p>
      
-       <br><br>
+       <br><hr><br>
        <h2 id="FrequentlyAskQuestions-malapascua">1. What Makes Malapascua a Unique Diving Destination?</h2>
        <p>    Malapascua is famous for its thresher sharks, which can be seen year-round at Kimud Shoal. The island also offers diverse dive sites, including shipwrecks, beautiful coral gardens, and vibrant marine life. Divers can explore everything from tiny critters like pygmy seahorses to majestic creatures like manta rays.</p>
            
@@ -636,11 +653,8 @@ carousel.addEventListener('touchmove', (event) => {
           <p> Diving in Malapascua is generally safe, thanks to the experienced dive operators and guides. It’s essential to follow the instructions of your dive master, check your equipment, and always dive within your limits. Emergency services and decompression chambers are available in Cebu City if needed.</p>
          <h3> 7. Can I Combine Diving with Other Activities?</h3>
           <p> Absolutely! Besides diving, you can enjoy activities like snorkeling, island hopping, beach relaxation, and exploring the local culture and cuisine. Malapascua’s charm goes beyond its underwater wonders.</p>
-        </div>  </div>
-        <div class="left">
- <div class="blog">
-                
-            <div class="article">
+              <br>  
+            <hr>
                  <h3>Once an Island Girl:
                  <br> My Mesmerizing Journey to Malapascua Island</h3><br>
                  <p>
@@ -660,10 +674,10 @@ carousel.addEventListener('touchmove', (event) => {
                     <br><br>
                     My time on Malapascua Island was an unforgettable journey of discovery, adventure, and connection. From the stunning underwater world to the vibrant local culture, every moment was filled with wonder and joy. As an island girl, I found a piece of paradise on Malapascua, and it will always hold a special place in my heart. If you’re seeking a destination that offers both natural beauty and rich cultural experiences, Malapascua Island is the perfect choice.
                     <br></p>
+                    <br><br>
             </div></div>
-</div>
-</div>
-
+    
+    </div>
 <footer>
     <div class="footer">
         <div class="footer-content">
