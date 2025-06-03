@@ -156,7 +156,7 @@ right: 1%;
 }
 
 .mySlides {
-    display: none;
+    display: block;
     width: 100%;
     border-radius: 10px;
 }
@@ -355,7 +355,7 @@ right: 1%;
 }
 
 .mySlides {
-    display:none;
+    display:block;
     width: 100%;
     border-radius: 10px;
 }
@@ -749,7 +749,7 @@ right: 1%;
 }
 
 .mySlides {
-    display: none;
+    display: block;
     width: 40%;
     border-radius: 10px;
 }
@@ -952,7 +952,7 @@ right: 1%;
 }
 
 .mySlides {
-    display: none;
+    display: block;
     width: 50%;
     border-radius: 10px;
 }
