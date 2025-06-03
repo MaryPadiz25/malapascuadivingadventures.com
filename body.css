@@ -1,0 +1,1120 @@
+
+@media (min-width:600px) {
+     .title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Playfair Display', serif;
+}
+ .carousel-container {
+            width:100%;
+            justify-items: center;
+        }
+
+        .carousel {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .slide {
+            flex: 0 0 auto;
+            width: 250px; /* Adjust as needed */
+            scroll-snap-align: start;
+             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.345);
+            padding: 1% 1%;
+        }
+
+        .slide img {
+            width:fit-content;
+            height: 120px;
+            border-radius: 10px;
+
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none; /* Hide scrollbar */
+        }
+          
+    .carousel-container a {
+         font-weight: 400;
+         text-decoration: none;
+          color:black;
+        font-size: 1.2rem;
+    }
+    
+
+    .carousel-container a:hover{
+        opacity:0.5 ;
+    }
+
+
+
+   .content{
+      position: relative;
+      width: 100%;
+   }
+   .new{
+      width: 55%;
+      position: relative;
+      float: right;
+      margin-right: 5%;
+      margin-left: 5%;
+
+      }
+   
+   }
+ 
+
+    @media (max-width:599.99px){
+    .title {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Playfair Display', serif;
+}
+ .carousel-container {
+            width:100%;
+            justify-items: center;
+        }
+
+        .carousel {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .slide {
+            margin-left: 15%;
+            margin-right: 15%;
+            flex: 0 0 auto;
+            width: 70%; 
+            scroll-snap-align: start;
+             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1% 3%;
+        }
+
+        .slide img {
+            width:fit-content;
+            height: 100px;
+            border-radius: 10px;
+
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none; /* Hide scrollbar */
+        }
+          
+    .carousel-container a {
+         font-weight: 400;
+         text-decoration: none;
+          color:black;
+        font-size: 1.6rem;
+    }
+    
+
+    .carousel-container a:hover{
+        opacity:0.5 ;
+    }
+
+    }
+ @media (min-width:1020px){
+  .content {
+    display: inline;
+    position: relative;
+    z-index:1;
+    width: 100%;
+    margin: auto;
+    
+}
+
+/* Dive Section Styling */
+.divenation, .dn3dives {
+    width: 62%;
+float: right;
+right: 1%;
+    padding: .5%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    margin-top: 1%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* Image Container */
+.image-container {
+    width: 30%;position: relative; float: left;
+    max-width: 300px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Info Section */
+.dive-info {
+    width: 42%;
+    padding: 5px;
+}
+
+.dive-times h2 {
+
+    font-size: 1.8rem;
+    color: #005D94;
+}
+
+.dive-times p {
+    
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+/* Dive Shop */
+.dive-shop {
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.dive-shop .ssi {
+    width: 15%;
+    border-radius: 50%;
+}
+
+/* Price Section */
+.price {
+    width: 30%;
+    text-align: center;
+}
+
+.price h2 {
+    font-size: 2.5rem;
+    color: red;
+}
+
+.price p {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+.price .view-details {
+    width: 80%;
+    padding: 10px;
+    background-color: #005D94;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.view-details:hover {
+    background-color: #0056b3;
+}
+
+
+    .faq{ box-sizing: border-box;
+             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+             width: 100%;
+            padding: 1% 1%;
+            
+            }
+            .faq h2,h3{
+                padding: 1% 0;
+                overflow-wrap: break-word;
+                hyphens: auto;
+                word-spacing: -.5px;
+                font-family: Playfair Display;
+                text-align: center;
+                position:relative;
+                font-size: 1.9rem;
+                color:black;
+                line-height: 25px;
+                }         
+            .faq div{position: relative;
+                padding: 4%;
+                 }
+            .faq p{
+                overflow-wrap: break-word;
+                hyphens: auto;
+                text-align: justify;
+                word-spacing: -.5px;
+                color: black;
+                font-family:sans-serif;
+                font-weight: 300;
+                font-size:1.1rem;
+                }
+                .faq p strong{
+                    color: rgb(255, 96, 10);
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    font-size:1.2rem;
+                    }
+                    .dive{width:50%;
+                        box-sizing:border-box;
+    margin-right: 25%;
+                     margin-left: 25%;
+                    }
+      
+        
+            .article{ 
+                background:rgba(249, 253, 253, 0.778);
+                height: auto;
+                box-sizing: border-box;
+                align-self: center;
+                position: flex;
+                padding-bottom:1% ;
+                padding: 5%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+                }
+            .article h3{
+                color: rgb(16, 97, 36);
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size:1.3rem;
+                text-align: center;
+            }
+            .article p{
+                margin-top: 2%;
+                letter-spacing:.5px;
+                word-spacing: -.5px;
+                overflow-wrap: break-word;
+                text-align: justify;
+                hyphens: auto;
+                color: black;
+                font-family: sans-serif;
+                font-weight: 300;
+                font-size:1.1rem;
+                line-height: 25px;
+                
+                }    
+
+
+                  .blog{ box-sizing: border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 2px 5px 5px #000;
+            padding: 1%;
+            width: 100%;    
+            }
+.left{
+    margin-left: 1%;
+    width: 30%;
+}
+ }
+ @media (min-width:730px) and (max-width:1019.98px){
+  .content {
+    display: inline;
+    position: relative;
+    z-index:1;
+    width: 100%;
+    margin: auto;
+    
+}
+
+/* Dive Section Styling */
+.divenation, .dn3dives {
+    width: 66%;
+float: right;
+right: 1%;
+    padding: .5%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    margin-top: 1%;
+   
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* Image Container */
+.image-container {
+    width: 30%;position: relative; float: left;
+    
+    max-width: 300px;
+}
+
+.mySlides {
+    display:none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Info Section */
+.dive-info {
+    width: 42%;
+    padding: 5px;
+}
+
+.dive-times h2 {
+
+    font-size: 1.5rem;
+    color: #005D94;
+}
+
+.dive-times p {
+    
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+/* Dive Shop */
+.dive-shop {
+    background-color: whitesmoke;
+    padding: 1px;
+    border-radius: 8px;
+}
+
+.dive-shop .ssi {
+    width: 15%;
+    border-radius: 50%;
+}
+
+/* Price Section */
+.price {
+    width: 35%;
+    text-align: center;
+}
+
+.price h2 {
+    font-size: 1.4rem;
+    color: red;
+}
+
+.price p {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.price .view-details {
+    width: 80%;
+    padding: 10px;
+    background-color: #005D94;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.view-details:hover {
+    background-color: #0056b3;
+}
+
+
+    .faq{ box-sizing: border-box;
+             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+             width: 100%;
+            padding: 1% 1%;
+            
+            }
+            .faq h2,h3{
+                padding: 1% 0;
+                overflow-wrap: break-word;
+                hyphens: auto;
+                word-spacing: -.5px;
+                font-family: Playfair Display;
+                text-align: center;
+                position:relative;
+                font-size: 1.9rem;
+                color:black;
+                line-height: 25px;
+                }         
+            .faq div{position: relative;
+                padding: 4%;
+                 }
+            .faq p{
+                overflow-wrap: break-word;
+                hyphens: auto;
+                text-align: justify;
+                word-spacing: -.5px;
+                color: black;
+                font-family:sans-serif;
+                font-weight: 300;
+                font-size:1.1rem;
+                }
+                .faq p strong{
+                    color: rgb(255, 96, 10);
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    font-size:1.2rem;
+                    }
+                    .dive{width:50%;
+                        box-sizing:border-box;
+    margin-right: 25%;
+                     margin-left: 25%;
+                    }
+      
+        
+            .article{ 
+                background:rgba(249, 253, 253, 0.778);
+                height: auto;
+                box-sizing: border-box;
+                align-self: center;
+                position: flex;
+                padding-bottom:1% ;
+                padding: 5%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+                }
+            .article h3{
+                color: rgb(16, 97, 36);
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size:1.3rem;
+                text-align: center;
+            }
+            .article p{
+                margin-top: 2%;
+                letter-spacing:.5px;
+                word-spacing: -.5px;
+                overflow-wrap: break-word;
+                text-align: justify;
+                hyphens: auto;
+                color: black;
+                font-family: sans-serif;
+                font-weight: 300;
+                font-size:1.1rem;
+                line-height: 25px;
+                
+                }    
+
+
+                  .blog{ box-sizing: border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 2px 5px 5px #000;
+            padding: 1%;
+            width: 100%;    
+            }
+.left{
+    margin-left: 1%;
+    width: 31%;
+}
+ }
+  @media (min-width:645px) and (max-width:729.98px){
+  .content {
+    display: inline;
+    position: relative;
+    z-index:1;
+    width: 100%;
+    margin: auto;
+    
+}
+
+/* Dive Section Styling */
+.divenation, .dn3dives {
+    width: 98%;
+    left: 1%;
+    padding: .5%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    margin-top: 1%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* Image Container */
+.image-container {
+    width: 35%;position: relative; float: left;
+}
+
+.mySlides {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Info Section */
+.dive-info {
+    width: 40%;
+    padding: 2px;
+}
+
+.dive-times h2 {
+
+    font-size: 1.5rem;
+    color: #005D94;
+}
+
+.dive-times p {
+    
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+/* Dive Shop */
+.dive-shop {
+    background-color: whitesmoke;
+    padding: 1px;
+    border-radius: 8px;
+}
+
+.dive-shop .ssi {
+    width: 15%;
+    border-radius: 50%;
+}
+
+/* Price Section */
+.price {
+    width: 30%;
+    text-align: center;
+}
+
+.price h2 {
+    font-size: 1.8rem;
+    color: red;
+}
+
+.price p {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+.price .view-details {
+    width: 80%;
+    padding: 10px;
+    background-color: #005D94;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.view-details:hover {
+    background-color: #0056b3;
+}
+
+
+    .faq{ box-sizing: border-box;
+             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+             width: 100%;
+            padding: 1% 1%;
+            
+            }
+            .faq h2,h3{
+                padding: 1% 0;
+                overflow-wrap: break-word;
+                hyphens: auto;
+                word-spacing: -.5px;
+                font-family: Playfair Display;
+                text-align: center;
+                position:relative;
+                font-size: 2rem;
+                color:black;
+                line-height: 25px;
+                }         
+            .faq div{position: relative;
+                padding: 4%;
+                 }
+            .faq p{
+                overflow-wrap: break-word;
+                hyphens: auto;
+                text-align: justify;
+                word-spacing: -.5px;
+                color: black;
+                font-family:sans-serif;
+                font-weight: 300;
+                font-size:1.2rem;
+                }
+                .faq p strong{
+                    color: rgb(255, 96, 10);
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    font-size:1.3rem;
+                    }
+                    .dive{width:50%;
+                        box-sizing:border-box;
+    margin-right: 25%;
+                     margin-left: 25%;
+                    }
+      
+        
+            .article{ 
+                background:rgba(249, 253, 253, 0.778);
+                height: auto;
+                box-sizing: border-box;
+                align-self: center;
+                position: flex;
+                padding-bottom:1% ;
+                padding: 5%;
+           
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+                }
+            .article h3{
+                color: rgb(16, 97, 36);
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size:1.5rem;
+                text-align: center;
+            }
+            .article p{
+                margin-top: 2%;
+                letter-spacing:.5px;
+                word-spacing: -.5px;
+                overflow-wrap: break-word;
+                text-align: justify;
+                hyphens: auto;
+                color: black;
+                font-family: sans-serif;
+                font-weight: 300;
+                font-size:1.1rem;
+                line-height: 25px;
+                
+                }    
+
+
+                  .blog{ box-sizing: border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 2px 5px 5px #000;
+            padding: 1%;
+            width: 100%;    
+            }
+.left{
+    margin-left: 1%;
+    width: 98%;
+}
+ }
+   @media (min-width:450px) and (max-width:644.98px){
+  .content {
+    display: block;
+    position: relative;
+    z-index:1;
+    width: 100%;
+    margin: auto;
+    
+}
+
+/* Dive Section Styling */
+.divenation, .dn3dives {
+    width: 98%;
+    left: 1%;
+    padding: .5%;
+      display: block;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    margin-top: 1%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* Image Container */
+.image-container {
+    width: 100%;
+    position: relative; 
+    justify-items: center;
+    max-width: 600px;
+}
+
+.mySlides {
+    display: none;
+    width: 40%;
+    border-radius: 10px;
+}
+
+
+/* Info Section */
+.dive-info {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding: 2%;
+}
+
+.dive-times h2 {
+
+    font-size: 1.5rem;
+    color: #005D94;
+}
+
+.dive-times p {
+    
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+/* Dive Shop */
+.dive-shop {
+    background-color: whitesmoke;
+    padding: 1px;
+    border-radius: 8px;
+}
+
+.dive-shop .ssi {
+    width: 15%;
+    border-radius: 50%;
+}
+
+/* Price Section */
+.price {
+    float: right;
+    right:1%;
+    width: 40%;
+    text-align: center;
+}
+
+.price h2 {
+    font-size: 1.8rem;
+    color: red;
+}
+
+.price p {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+.price .view-details {
+    width: 80%;
+    padding: 10px;
+    background-color: #005D94;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.view-details:hover {
+    background-color: #0056b3;
+}
+
+
+    .faq{ box-sizing: border-box;
+             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+             width: 100%;
+            padding: 1% 1%;
+            
+            }
+            .faq h2,h3{
+                padding: 1% 0;
+                overflow-wrap: break-word;
+                hyphens: auto;
+                word-spacing: -.5px;
+                font-family: Playfair Display;
+                text-align: center;
+                position:relative;
+                font-size: 2rem;
+                color:black;
+                line-height: 25px;
+                }         
+            .faq div{position: relative;
+                padding: 4%;
+                 }
+            .faq p{
+                overflow-wrap: break-word;
+                hyphens: auto;
+                text-align: justify;
+                word-spacing: -.5px;
+                color: black;
+                font-family:sans-serif;
+                font-weight: 300;
+                font-size:1.2rem;
+                }
+                .faq p strong{
+                    color: rgb(255, 96, 10);
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    font-size:1.3rem;
+                    }
+                    .dive{width:50%;
+                        box-sizing:border-box;
+    margin-right: 25%;
+                     margin-left: 25%;
+                    }
+      
+        
+            .article{ 
+                background:rgba(249, 253, 253, 0.778);
+                height: auto;
+                box-sizing: border-box;
+                align-self: center;
+                position: flex;
+                padding-bottom:1% ;
+                padding: 5%;
+           
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+                }
+            .article h3{
+                color: rgb(16, 97, 36);
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size:1.5rem;
+                text-align: center;
+            }
+            .article p{
+                margin-top: 2%;
+                letter-spacing:.5px;
+                word-spacing: -.5px;
+                overflow-wrap: break-word;
+                text-align: justify;
+                hyphens: auto;
+                color: black;
+                font-family: sans-serif;
+                font-weight: 300;
+                font-size:1.1rem;
+                line-height: 25px;
+                
+                }    
+
+
+                  .blog{ box-sizing: border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 2px 5px 5px #000;
+            padding: 1%;
+            width: 100%;    
+            }
+.left{
+    width: 98%;
+    margin-left: 1%;
+}
+ }
+    @media(max-width:449.98px){
+  .content {
+    display: block;
+    position: relative;
+    z-index:1;
+    width: 100%;
+    margin: auto;
+    
+}
+
+/* Dive Section Styling */
+.divenation, .dn3dives {
+    width: 98%;
+    left: 1%;
+    padding: .5%;
+      display: block;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    margin-top: 1%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* Image Container */
+.image-container {
+    width: 100%;
+    position: relative; 
+    justify-items: center;
+    max-width: 600px;
+}
+
+.mySlides {
+    display: none;
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+/* Info Section */
+.dive-info {
+    display: inline-block;
+    width: 48%;
+    float: left;
+    padding: 1%;
+}
+
+.dive-times h2 {
+
+    font-size: 1.2rem;
+    color: #005D94;
+}
+
+.dive-times p {
+    
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+/* Dive Shop */
+.dive-shop {
+    background-color: whitesmoke;
+    padding: 1px;
+    border-radius: 8px;
+}
+
+.dive-shop .ssi {
+    width: 15%;
+    border-radius: 50%;
+}
+
+/* Price Section */
+.price {
+    float: right;
+    right:1%;
+    width: 52%;
+    text-align: center;
+}
+
+.price h2 {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.price p {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.price .view-details {
+    width: 80%;
+    padding: 10px;
+    background-color: #005D94;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.view-details:hover {
+    background-color: #0056b3;
+}
+
+
+    .faq{ box-sizing: border-box;
+             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+             width: 100%;
+            padding: 1% 1%;
+            
+            }
+            .faq h2,h3{
+                padding: 1% 0;
+                overflow-wrap: break-word;
+                hyphens: auto;
+                word-spacing: -.5px;
+                font-family: Playfair Display;
+                text-align: center;
+                position:relative;
+                font-size: 1.5rem;
+                color:black;
+                line-height: 25px;
+                }         
+            .faq div{position: relative;
+                padding: 4%;
+                 }
+            .faq p{
+                overflow-wrap: break-word;
+                hyphens: auto;
+                text-align: justify;
+                word-spacing: -.5px;
+                color: black;
+                font-family:sans-serif;
+                font-weight: 300;
+                font-size:1.1rem;
+                }
+                .faq p strong{
+                    color: rgb(255, 96, 10);
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    font-size:1.2rem;
+                    }
+                    .dive{width:50%;
+                        box-sizing:border-box;
+    margin-right: 25%;
+                     margin-left: 25%;
+                    }
+      
+        
+            .article{ 
+                background:rgba(249, 253, 253, 0.778);
+                height: auto;
+                box-sizing: border-box;
+                align-self: center;
+                position: flex;
+                padding-bottom:1% ;
+                padding: 5%;
+           
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+                }
+            .article h3{
+                color: rgb(16, 97, 36);
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size:1.5rem;
+                text-align: center;
+            }
+            .article p{
+                margin-top: 2%;
+                letter-spacing:.5px;
+                word-spacing: -.5px;
+                overflow-wrap: break-word;
+                text-align: justify;
+                hyphens: auto;
+                color: black;
+                font-family: sans-serif;
+                font-weight: 300;
+                font-size:1.1rem;
+                line-height: 25px;
+                
+                }    
+
+
+                  .blog{ box-sizing: border-box;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 2px 5px 5px #000;
+            padding: 1%;
+            width: 100%;    
+            }
+.left{
+    width: 98%;
+    margin-left: 1%;
+}
+ }

@@ -1,0 +1,617 @@
+* {max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans';
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #1E90FF, #87CEFA);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+}
+
+.banner {
+    z-index: 2;    
+    padding: .3%;
+    background-color: #C70039; 
+    text-align: center;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    top: -100px; 
+    transition: top 0.5s ease-in-out;
+}
+.banner.visible {
+    top: 0;
+    position: relative;
+}
+.banner .my-logo{
+    left: 5%;
+    border: 20px;
+    border-radius: 50%;
+    width: 18%;
+    max-width: 50px;
+    height:auto;
+    background-size: 100%;
+    cursor: pointer;
+    animation: spin 5s linear ;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+}   
+.banner .my-logo:hover {
+    opacity: 0.7;
+    transform: rotate(360deg);
+    transition: transform 0.6s ease-in-out;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.banner .booking-banner{
+    width: 100%;
+    position: relative;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-decoration: none;
+    padding: 10px 0;
+    display: inline-block;align-self: start;
+    }
+.blinking {
+    animation: blink 1s infinite;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+.blinking:hover{
+    opacity: 0.5;
+}
+@keyframes blink {
+    0%, 100% { color: yellow; }
+    50% { color: white; }
+}
+
+.contactform {
+    background-image: url('ts.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #444;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 3;
+    padding: 10px;
+}
+.contactform .form-container {
+    background-color: rgba(255, 255, 255, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+}
+.contactform .btn.cancel{ 
+    background:none;
+    border: none;
+    float: right;
+    z-index: 9;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.contactform .btn.cancel:hover{ 
+    transform: scale(1.2);
+}
+.contactform h1{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.contactform .labelform{
+    margin-top: 3%;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 300;
+    width: 100%;
+    border-radius: 5px;
+}
+.contactform .inputform, textarea{
+    margin-bottom: 2%;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.contactform .submit {
+    background-color: #FF5733; /* Eye-catching color */
+    color: #000;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.contactform .submit:hover {
+    background-color: #C70039;
+}
+.contactform .footer-content {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+.contactform .footer-content a {
+    color: black;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    word-break: break-all;
+    font-size: 1rem;
+    text-decoration: none;
+    width: 100%;
+}
+
+header {
+    background:none;
+    height: auto;
+    top:0;
+    display:block;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: background 0.3s ease-in-out;
+}
+header .top{
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9);
+}
+header .site-title {
+    text-decoration: none;
+    position: relative;
+    width:100%;
+    color: Black;
+    font-family: raleway;
+    cursor:pointer;
+    font-weight: bold;
+    transition: transform 0.6s ease-in-out;
+}
+header .site-title:hover {
+    transform: scale(1.05);
+}     
+ @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }}
+header .wrappers nav ul{
+    width: 100%;
+    padding: 1% 0;
+}
+header .wrappers nav ul li{
+    cursor: pointer;
+}              
+header nav ul li a{
+    font-size: 1.2rem;
+    color: #0f6e00;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+    color: #c70039;
+}
+
+.contacts {
+    right:5%;
+    z-index: 2;
+    position: fixed;
+    top:80%;   
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff5733, #c70039);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    animation: pulse 1.5s infinite;
+}
+.contacts p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:black;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+
+         
+
+    
+
+@media (min-width:600px) {
+html, body{
+    padding-top: 100px;
+}
+.policy {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.policy-content {
+    margin-top: 5%;
+    justify-self: center;
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+.policy-content h2, h3 {
+    color: #005D94;
+    margin-bottom: 10px;
+}
+.policy-content p, ul {
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+}
+.policy-content a {
+    color: #005D94;
+    text-decoration: none;
+}
+.policy-content a:hover {
+    text-decoration: underline;
+}
+.closeCopyright, .closeArticle{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.closeCopyright:hover {
+    opacity: 0.7;
+}
+.closeArticle:hover{ 
+     opacity: 0.7;
+}
+
+.contactform {
+    width: 60%;
+    max-width: 700px;
+}
+
+.banner .my-logo{
+    position: absolute;
+}
+.banner .booking-banner {
+    font-size: 1.5rem;
+    padding: z;
+}  
+
+header .top{
+    display: inline-block;
+    height: fit-content;
+}
+header .site-title{
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+}          
+header .wrappers{
+    padding: 0;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+header .wrappers nav ul li{
+    display: inline-flex;
+    padding: 1% 0;
+    position: relative;
+    
+}
+header nav ul li a {
+    display: flex;
+}
+header .wrappers nav ul li:hover > ul{
+    display: block;
+}     
+header #toggle{
+    display: none;
+}
+header .wrappers .checkbtn{
+    display: none;
+}
+
+.dropdown{
+    display: inline-flex;
+    height: auto;
+    width: auto;
+    position:relative;
+    font-size:2em;
+    text-align: center;
+    cursor:pointer;
+    transition: .5s ease;
+}
+.dropdown input {
+    display: none; /* Hide default checkbox */
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    color: rgb(11, 63, 1);
+    font-size: 18px;
+    width: auto;
+    border: none;
+    cursor: pointer;
+}
+
+/* Default: Hide dropdown */
+.dropdown-content {
+    display: none;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.dropdown-content li {
+    position:relative;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    color: rgb(229, 14, 14);
+    border-radius: 5px;
+}
+
+
+.dropdown input[type=checkbox]:checked~.dropdown-content{
+   padding: 3%;
+    display: block;
+    position: relative;
+    width: 40%;
+}
+.dropdown input[type=checkbox]:checked~.dropdown-btn{
+color: #C70039;
+}
+}
+
+
+
+@media (max-width: 599.95px) {
+html, body{
+    padding-top: 100px;
+}
+.policy {
+    display: none;
+    padding:2%;
+    position: relative;
+    width: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.policy-content {
+    justify-self: center;
+    background-color: #fff;
+    padding: 2% 2%;
+    width: 94%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+   
+}
+.policy-content h2, h3 {
+     text-align: center;
+    color: #005D94;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.policy-content p, ul {
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-size: 1.1rem;
+    color: #333;
+
+}
+.policy-content a {
+    font-size: 1.2rem;
+    color: #005D94;
+    text-decoration: none;
+}
+.policy-content a:hover {
+    text-decoration: underline;
+}
+.closeCopyright, .closeArticle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    position: relative;
+    float:right;
+    cursor: pointer;
+}
+.closeCopyright:hover {
+    opacity: 0.7;
+}
+.closeArticle:hover{ 
+     opacity: 0.7;  
+}
+
+.contactform {
+    width: 90%;
+    top: 15%;
+}
+.contactform .form-container {
+    padding: 15px;
+}
+.contactform .submit {
+    font-size: 1rem;
+}
+
+.banner .booking-banner {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 2.5%;
+}
+.banner .my-logo{
+    position: relative;
+    margin-left: -4%;
+    margin-right: 3%;
+}
+.blinking {
+    font-size: .8rem;
+}
+
+header .top{
+    padding-top: 5%;
+    padding-bottom: 10%;
+    display: inline-flex;
+    height: fit-content;
+}
+header .site-title{
+    position: absolute;
+    font-size: 1.8rem;
+    margin-left: 1%;
+    width: 100%;
+    max-width: 230px;
+}
+                
+header .wrappers {  
+    height: auto;
+    width: 100%;
+    position:relative;
+}
+header .checkbtn{
+    height: fit-content;
+    float: right;
+    margin-right:5%;
+    font-size:2em;
+    text-align: center;
+    cursor:pointer;
+    transition: .5s ease;
+}
+.checkbtn:hover{
+    opacity: 0.5;
+}
+.wrappers input{
+    display: none;
+}
+.wrappers div label:hover{
+    background-color: none;
+}
+.wrappers  .firstnav{
+    display: none;
+    z-index: 10;          
+}
+.wrappers input[type=checkbox]:checked~.firstnav{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.wrappers nav ul{
+    margin-top: 15%;
+                    }
+.wrappers nav ul li{
+    margin-left: 5%;
+}
+.wrappers nav ul li a{
+    font-size: 1.2em; 
+}
+
+.dropdown{
+    display: block;
+    height: auto;
+    width: auto;
+    position:relative;
+    left:4%;
+    cursor:pointer;
+    transition: .5s ease;
+}
+.dropdown input {
+    display: none; /* Hide default checkbox */
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    color: rgb(11, 63, 1);
+    width: auto;
+    border: none;
+    cursor: pointer;
+    font-size:1.2rem;
+}
+
+/* Default: Hide dropdown */
+.dropdown-content {
+    display: none;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 5;
+    
+}
+
+.dropdown-content li {
+    position:relative;
+    display: block;
+    
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    color: rgb(229, 14, 14);
+    border-radius: 5px;
+}
+
+
+.dropdown input[type=checkbox]:checked~.dropdown-content{
+   padding: 0;
+    display:inline;
+    position: relative;
+    width: 40%;
+}
+.dropdown input[type=checkbox]:checked~.dropdown-btn{
+color: #C70039;
+}
+}
+
