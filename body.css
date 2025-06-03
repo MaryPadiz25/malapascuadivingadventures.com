@@ -240,12 +240,7 @@
     font-family: sans-serif;
     font-weight: bold;
 }
-.dive{
-    width:50%;
-    box-sizing:border-box;
-    margin-right: 25%;
-    margin-left: 25%;
-}
+
 
 @media (min-width:830px){
 .divenation, .dn3dives {
@@ -289,6 +284,12 @@
 }
 .faq p strong{
     font-size:1.2rem;
+}
+.dive{
+    width:50%;
+    box-sizing:border-box;
+    margin-right: 25%;
+    margin-left: 25%;
 }
 }
 @media(max-width:829.98px){
@@ -336,5 +337,11 @@
 }
 .faq p strong{
     font-size:1rem;
+}
+.dive{
+    width:90%;
+    box-sizing:border-box;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 }
