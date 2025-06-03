@@ -300,10 +300,26 @@ window.addEventListener("scroll", function() {
     </div>
 </div>
 <script>
-    document.querySelector('.carousel').addEventListener('wheel', (event) => {
-        event.preventDefault();
-        event.currentTarget.scrollLeft += event.deltaY;
-    });
+  const carousel = document.querySelector('.carousel');
+
+// Wheel scrolling (for desktops)
+carousel.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    carousel.scrollLeft += event.deltaY;
+});
+
+// Touch move (for mobile)
+let startX;
+carousel.addEventListener('touchstart', (event) => {
+    startX = event.touches[0].clientX;
+});
+
+carousel.addEventListener('touchmove', (event) => {
+    event.preventDefault();
+    let moveX = event.touches[0].clientX;
+    carousel.scrollLeft += startX - moveX;
+    startX = moveX;
+});
 </script>
 <div class="content">
        <div class="divenation">
