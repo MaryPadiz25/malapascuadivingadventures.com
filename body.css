@@ -116,9 +116,12 @@
     transform: translateX(0);
 }
 .image-container {
+    overflow-y: hidden;
+    display: block;
     width: 100%;
     position: relative; 
     justify-items: center;
+    max-height: 200px;
 }
 .frame1, .frame2{
     transition: 0.3s ease-in-out;
@@ -132,11 +135,14 @@
 }
 
 
+.mySlides:first-child {
+    visibility: visible;
+    opacity: 1;
+}
 
 
 .mySlides {
-    overflow-y: hidden;
-    display: block;
+     display: block;
     width: 50%;
     border-radius: 10px;
     max-height: 200px;
