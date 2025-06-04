@@ -59,6 +59,24 @@
   }
 }
 </script>
+<script defer>
+  const carousel = document.querySelector('.carousel');
+carousel.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    carousel.scrollLeft += event.deltaY;
+});
+let startX;
+carousel.addEventListener('touchstart', (event) => {
+    startX = event.touches[0].clientX;
+});
+
+carousel.addEventListener('touchmove', (event) => {
+    event.preventDefault();
+    let moveX = event.touches[0].clientX;
+    carousel.scrollLeft += startX - moveX;
+    startX = moveX;
+});
+</script>
         <title>Malapascua Diving | Scuba Diving Malapascua</title>    
    
     </head>
