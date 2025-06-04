@@ -143,11 +143,11 @@
 
 .mySlides {
      display: block;
-    width: 50%;
     border-radius: 10px;
-    max-height: 200px;
+    width: 50%;
     margin-bottom: 2%;
     max-width: 300px;
+    aspect-ratio: auto 640 / 360;
 }
 .dive-info {
     display: inline;
