@@ -182,14 +182,12 @@
     align-self: center;
     width: 100%;
     position: flex;
+    justify-items: center;
     transition: 0.3s ease-in-out;
 }
 .faq{ 
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
     line-height:30px;
-    justify-items: center;
 }
 .faq h2{
     padding: 1% 0;
@@ -201,10 +199,6 @@
     position:relative;
     color:black;
 }         
-.faq div{
-    position: relative;
-    padding: 4%;
-}
 .faq p{
     overflow-wrap: break-word;
     hyphens: auto;
@@ -356,7 +350,7 @@
 .article{ 
     margin-top: 1%;
 }
-.faq h2, h3{
+.faq h2{
     font-size: 1.125rem;
 } 
 .faq p{
@@ -367,8 +361,5 @@
 }
 .dive{
     height: auto;
-    box-sizing:border-box;
-    margin-right: 5%;
-    margin-left: 5%;
 }
 }
