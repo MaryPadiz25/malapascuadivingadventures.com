@@ -55,23 +55,27 @@
     overflow-x: scroll;
     width:100%;
     justify-items: center;
+    align-items: center;
     margin-bottom: 3%;
 }
 .carousel {
     display: flex;
+    gap:2%;
+    padding: 0 1%;
 }
 .slide {
-    margin-left: 15%;
-    margin-right: 15%;
     flex: 0 0 auto;
-    width: 70%; 
+    width: 48%; 
+    justify-items: center;
     scroll-snap-align: start;
     text-align: center;
     padding: 3%;
     background-color: #efe3e34d;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgb(7, 0, 36);
 } 
 .slide img {
-    width:fit-content;
+    width: auto;
     height: 100px;
     border-radius: 10px;
 }
