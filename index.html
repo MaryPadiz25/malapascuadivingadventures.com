@@ -63,24 +63,6 @@
         <title>Malapascua Diving | Scuba Diving Malapascua</title>    
    
     </head>
-    <script defer>
-  const carousel = document.querySelector('.carousel');
-carousel.addEventListener('wheel', (event) => {
-    event.preventDefault();
-    carousel.scrollLeft += event.deltaY;
-});
-let startX;
-carousel.addEventListener('touchstart', (event) => {
-    startX = event.touches[0].clientX;
-});
-
-carousel.addEventListener('touchmove', (event) => {
-    event.preventDefault();
-    let moveX = event.touches[0].clientX;
-    carousel.scrollLeft += startX - moveX;
-    startX = moveX;
-});
-</script>
 <div id="copyrightArticle" class="policy">
     <div class="policy-content">
         <button type="button" class="closeCopyright" id="closeCopyright">❌</button>
@@ -323,7 +305,24 @@ window.addEventListener("scroll", function() {
             </div>
     </div>
 </div>
+<script defer>
+  const carousel = document.querySelector('.carousel');
+carousel.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    carousel.scrollLeft += event.deltaY;
+});
+let startX;
+carousel.addEventListener('touchstart', (event) => {
+    startX = event.touches[0].clientX;
+});
 
+carousel.addEventListener('touchmove', (event) => {
+    event.preventDefault();
+    let moveX = event.touches[0].clientX;
+    carousel.scrollLeft += startX - moveX;
+    startX = moveX;
+});
+</script>
 <hr>
 <div class="content">
        <div class="divenation">
