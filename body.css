@@ -144,7 +144,7 @@
 .mySlides {
      display: block;
     border-radius: 10px;
-    width: 50%;
+    width: 90%;
     margin-bottom: 2%;
     max-width: 300px;
     aspect-ratio: auto 640 / 360;
