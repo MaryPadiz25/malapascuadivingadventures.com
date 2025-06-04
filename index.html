@@ -32,6 +32,7 @@
 <link rel="preload" fetchpriority="high" as="image" href="shark.jpg" type="image/jpg">
 <link rel="preload" fetchpriority="high" as="image" href="group.jpg" type="image/jpg">
 <link rel="preload" fetchpriority="high" as="image" href="snorkeling.jpg" type="image/jpg">
+<link rel="preload" as="image" href="divesharksmall.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="touristlogo.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="touristlogo.jpg">
 <link rel="icon" type="image/png" sizes="16x16" href="touristlogo.jpg">
@@ -273,7 +274,7 @@ window.addEventListener("scroll", function() {
     <div class="carousel">
 
         <div class="slide">
-            <img data-src="divesharksmall.jpg" alt="Malapascua Island - Top Diving Destination" loading="lazy">
+            <img data-src="divesharksmall.jpg" alt="Malapascua Island - Top Diving Destination">
           <br>  <a href="#malapascuaisland">
                 <strong>Malapascua Island:</strong> <br>Exceptional diving with thresher sharks</a>
             </div>
@@ -304,7 +305,7 @@ window.addEventListener("scroll", function() {
             </div>
     </div>
 </div>
-<script>
+<script defer>
   const carousel = document.querySelector('.carousel');
 carousel.addEventListener('wheel', (event) => {
     event.preventDefault();
