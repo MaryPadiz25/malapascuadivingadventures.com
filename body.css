@@ -320,6 +320,11 @@
 
 .article{ 
     margin-top: 1%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em; /* 1em equals the parent element's font size */
+    font-weight: normal; /* Use 'bold' where needed */
+    line-height: 1.5em; /* 1.5 times the font size for readability */
+    letter-spacing: 0.03em; /* Fine-tune spacing */
 }
 .faq h2{
     font-size: 1.125em;
