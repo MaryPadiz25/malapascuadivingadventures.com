@@ -246,9 +246,8 @@
     height: auto;
 }
 .mySlides {
-     display: block;
+    display: block;
     border-radius: 10px;
-    width: 90%;
     margin-bottom: 2%;
     max-width: 300px;
     aspect-ratio: auto 640 / 360;
@@ -322,7 +321,6 @@
     display: block;
     border-radius: 10px;
     margin-bottom: 2%;
-    padding: 0 5%;
     max-width:300px;
     aspect-ratio: auto 640 / 360;
 }
