@@ -288,6 +288,9 @@
 .article{ 
     margin-top: 2%;
 }
+.faq{
+     justify-items: center;
+}
 .faq h2, h3{
     font-size: 1.9rem;
 } 
