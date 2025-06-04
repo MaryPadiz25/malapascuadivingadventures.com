@@ -128,12 +128,6 @@
 }
 
 
-.mySlides:first-child {
-    visibility: visible;
-    opacity: 1;
-}
-
-
 .dive-info {
     display: inline;
     width: 50%;
@@ -247,7 +241,7 @@
     width: 100%;
     position: relative; 
     justify-items: center;
-    max-height: 200px;
+    height: auto;
 }
 .mySlides {
      display: block;
@@ -313,6 +307,7 @@
     width: 100%;
     position: relative; 
     justify-items: center;
+    height: auto;
 }
 .mySlides {
     display: block;
@@ -320,7 +315,6 @@
     margin-bottom: 2%;
     padding: 0 5%;
     max-width:300px;
-    max-height: 300px;
     aspect-ratio: auto 640 / 360;
 }
 .dive-times h2 {
