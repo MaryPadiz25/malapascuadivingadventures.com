@@ -323,7 +323,7 @@
     hyphens: auto;
     margin-top: 1%;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.125em; /* 1em equals the parent element's font size */
+    font-size: .8em; /* 1em equals the parent element's font size */
     font-weight: bold; /* Use 'bold' where needed */
     line-height: 1.5em; /* 1.5 times the font size for readability */
     letter-spacing: 0.03em; /* Fine-tune spacing */
@@ -332,7 +332,7 @@
     overflow-wrap: break-word;
     hyphens: auto;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 1em; /* 1em equals the parent element's font size */
+    font-size: .7em; /* 1em equals the parent element's font size */
     font-weight: normal; /* Use 'bold' where needed */
     line-height: 1.5em; /* 1.5 times the font size for readability */
     letter-spacing: 0.03em; /* Fine-tune spacing */
