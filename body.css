@@ -320,7 +320,7 @@
     margin-bottom: 2%;
     padding: 0 5%;
     max-width:300px;
-    max-height: 230px;
+    max-height: 300px;
     aspect-ratio: auto 640 / 360;
 }
 .dive-times h2 {
@@ -366,6 +366,7 @@
 }
 .dive{
     width:90%;
+    max-height: 500px;
     box-sizing:border-box;
     margin-right: 5%;
     margin-left: 5%;
