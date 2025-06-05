@@ -323,12 +323,11 @@
     hyphens: auto;
     margin-top: 1%;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: -.5em; /* 1em equals the parent element's font size */
+    font-size: -1em; /* 1em equals the parent element's font size */
     font-weight: bold; /* Use 'bold' where needed */
     line-height: 1.5em; /* 1.5 times the font size for readability */
     letter-spacing: 0.03em; /* Fine-tune spacing */
 }
-
 .faq{ 
     overflow-wrap: break-word;
     hyphens: auto;
