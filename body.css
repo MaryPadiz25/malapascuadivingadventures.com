@@ -51,7 +51,7 @@
     color: white;
     font-family: 'open sans';
 }
- .carousel-container {overflow-x: scroll; width:100%; justify-items: center; align-items: center; margin-bottom: 3%;} .carousel {display: flex; gap:2%; padding: 0 1%;} .slide {flex: 0 0 auto; width: 48%; justify-items: center; scroll-snap-align: start; text-align: center; padding: 3%; background-color: #efe3e34d; border-radius: 10px;} .slide img {width: auto; height: 100px; border-radius: 10px;} .carousel::-webkit-scrollbar {display: none;} .carousel-container a {font-weight: normal; text-decoration: none; color:black; font-size: 1em;} .carousel-container a:hover{opacity:0.5 ;}
+ .carousel-container {overflow-x: scroll; width:100%; justify-items: center; align-items: center; margin-bottom: 3%;} .carousel {display: flex; gap:2%; padding: 0 1%;} .slide {flex: 0 0 auto; width: 48%; justify-items: center; scroll-snap-align: start; text-align: center; padding: 3%; background-color: #efe3e34d; border-radius: 10px;} .slide img {width: auto; height: 50px; border-radius: 10px;} .carousel::-webkit-scrollbar {display: none;} .carousel-container a {font-weight: normal; text-decoration: none; color:black; font-size: 1em;} .carousel-container a:hover{opacity:0.5 ;}
 }
 
 .content{
