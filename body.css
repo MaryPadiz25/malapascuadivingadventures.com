@@ -206,8 +206,7 @@
     display: block;
     border-radius: 10px;
     margin-bottom: 2%;
-    width: auto;
-    height:100px;
+    max-width: 300px;
     aspect-ratio: auto 640 / 360;
 }
 .dive-times h2 {
