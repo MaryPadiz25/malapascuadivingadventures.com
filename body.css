@@ -333,15 +333,15 @@
     justify-items: center;
 }
 .faq h2{
-    font-size: 1.125rem;
+    font-size: 1.125em;
 } 
 .faq p{
       word-spacing:0;
-    font-size: .8em; /* 1em equals the parent element's font size */
+    font-size: 1em; /* 1em equals the parent element's font size */
     font-weight: normal; 
 }
 .faq p strong{
-    font-size:1rem;
+    font-size:1em;
 }
 .dive{
     height: auto;
