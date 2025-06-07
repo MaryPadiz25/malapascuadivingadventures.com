@@ -1,4 +1,3 @@
-
 @media (min-width:600px) {
 .title {
     font-size: 3rem;
@@ -43,7 +42,6 @@
     opacity:0.5 ;
  }
 }
-   
 @media (max-width:599.99px){
 .title {
     font-size: 1.5rem;
@@ -60,6 +58,7 @@
     z-index:1;
     margin: auto;
     display: block;
+    justify-items: center;
 }
 
 .divenation, .dn3dives {
@@ -70,20 +69,16 @@
     margin-top: 1%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    padding: 1%;
     transition: 0.3s ease-in-out;
     opacity: 0;
     transform: translateX(50%);
+    justify-items: center;
     transition: all 0.6s ease-in;
 }
 .dn3dives.visible, .divenation.visible {
     opacity: 1;
     transform: translateX(0);
 }
-
-
-
-
 .dive-info {
     display: inline;
     width: 50%;
@@ -149,17 +144,20 @@
     position: flex;
     justify-items: center;
     transition: 0.3s ease-in-out;
+    line-height: 1.25em;
+    word-wrap: break-word;
 }
-.faq{ 
-    width: 80%;
-    line-height:30px;
+
+.faq{
+    padding: 5%;
+    width: 90%;
+    justify-items: center;
 }
 .faq h2{
     padding: 1% 0;
     overflow-wrap: break-word;
     hyphens: auto;
     word-spacing: -.5px;
-    letter-spacing: 0.03em;
     font-family: 'open sans';
     text-align: center;
     position:relative;
@@ -189,9 +187,11 @@
 
 @media (min-width:830px){
 .divenation, .dn3dives {
+    justify-items: center;
     float: right;
     margin-right: 10%;
     margin-left: 5%;
+    padding: 1%;
     width: 45%;
 }
 .image-container {
@@ -254,12 +254,11 @@
     font-size: 1.9rem;
 } 
 .faq p{
-    font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
     font-size: 1.125em; /* 1em equals the parent element's font size */
     font-weight: normal; /* Use 'bold' where needed */
-    line-height: 1.5em; /* 1.5 times the font size for readability */
-    letter-spacing: 0.03em; /* Fine-tune spacing */
-    
+    line-height: 1.2em; /* 1.5 times the font size for readability */
+    letter-spacing: 0.03em; /
 }
 .faq p strong{
     font-size:1.2rem;
@@ -270,9 +269,11 @@
 }
 @media(max-width:829.98px){
 .divenation, .dn3dives {
-    margin-right: 5%;
-    margin-left: 5%;
-    width: 90%;
+    margin-right: 3%;
+    margin-left: 3%;
+    justify-items: center;
+    width: 88%;
+    padding: 3%;
 }
 .image-container {
     overflow-y: hidden;
@@ -283,14 +284,16 @@
     height: auto;
 }
 .mySlides {
+    justify-items: center;
     display: block;
     border-radius: 10px;
     margin-bottom: 2%;
-    max-width:300px;
+    width: auto;
+    max-height:125px;
     aspect-ratio: auto 640 / 360;
 }
 .dive-times h2 {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     
 }
 .dive-times p {
@@ -312,32 +315,34 @@
     font-size: .9rem;
 }
 .left{
+    justify-items: center;
     margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+    padding: 3%;
+    width: 94%;
 }
 
 .article{ 
-    overflow-wrap: break-word;
-    hyphens: auto;
+    width: 100%;
     margin-top: 1%;
     font-family: Helvetica, Arial, sans-serif;
-    line-height: 1em; /* 1.5 times the font size for readability */
-    letter-spacing: 0; /* Fine-tune spacing */
+    justify-items: center;
+     overflow-wrap: break-word;
+    hyphens: auto;
 }
-.faq h2{ 
-    font-size: 1.125em; /* 1em equals the parent element's font size */
-    font-weight: bold; /* Use 'bold' where needed */
-    
+.faq{
+    font-size: 1.125em;
+    justify-items: center;
 }
+.faq h2{
+    font-size: 1.125rem;
+} 
 .faq p{
-    word-spacing:0;
+      word-spacing:0;
     font-size: 1em; /* 1em equals the parent element's font size */
-    font-weight: normal; /* Use 'bold' where needed */
-    }
+    font-weight: normal; 
+}
 .faq p strong{
-    font-size:1em;
+    font-size:1rem;
 }
 .dive{
     height: auto;
