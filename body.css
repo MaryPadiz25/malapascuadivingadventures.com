@@ -330,7 +330,6 @@
     hyphens: auto;
 }
 .faq{
-    font-size: 1.125em;
     justify-items: center;
 }
 .faq h2{
@@ -338,7 +337,7 @@
 } 
 .faq p{
       word-spacing:0;
-    font-size: .9em; /* 1em equals the parent element's font size */
+    font-size: .8em; /* 1em equals the parent element's font size */
     font-weight: normal; 
 }
 .faq p strong{
