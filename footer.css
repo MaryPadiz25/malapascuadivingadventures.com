@@ -1,18 +1,18 @@
 @media (min-width:600px) {
-    footer{ width: 100vw;
+    footer{ width: 100%;
         bottom: 0;
+        margin: 0;
     }
 .footer {
     width: 100%;
-    background-color: rgba(209, 237, 255, 0.652);
-    padding: 20px 0;
+    background-color: rgba(194, 244, 242, 0.652);
+    margin: 0;
     text-align: center;
 }
  .footer .footer-content {
-    max-width: 80%;
-    margin: auto;
+    max-width: 90%;
+    margin: 5%;
     color: black;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +31,7 @@
     font-weight: bold;
     text-decoration: none;
     color: black;
+    text-align: center;
     margin-top: 10px;
 }
 .footer .site-title:hover {
@@ -38,13 +39,15 @@
     text-shadow: 1px 1px 5px red;
 }
 .footer .policies {
+    width: 100%;
     list-style-type: none;
     padding: 0;
-    display: flex;
+    display: inline-block;
     gap: 15px;
+    text-align: center;
 }
 .footer .policies li {
-    display: inline-block;
+    display: inline-flex;
 }
 .footer .policies a {
     font-size: 1rem;
@@ -59,14 +62,13 @@
 @media (max-width:599.99px){
     .footer {
     width: 100%;
-    padding: 10px 0;
+    margin: 0;
     text-align: center;
 }
 .footer .footer-content {
     max-width: 90%;
-    margin: auto;
+    margin: 10%;
     color: black;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,9 +91,11 @@
 }
 .footer .policies {
     list-style-type: none;
+    text-align: center;
     padding: 0;
     display: flex;
-    gap: 15px;
+    gap: 5px;
+    width: 100%;
 }
 .footer .policies li {
     display: inline-block;
