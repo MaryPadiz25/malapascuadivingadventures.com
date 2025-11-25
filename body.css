@@ -194,7 +194,7 @@ html, body {
     font-weight: bold;
 }
 .dive{
-    transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     opacity: 0;
     transform: translateX(50%);
     transition: all .8s ease-out;
@@ -283,7 +283,7 @@ html, body {
     font-size:1.2rem;
 }
 .dive{
-   max-width: 600px;
+   margin:0;
 }
 }
 @media(max-width:829.98px){
