@@ -443,6 +443,100 @@ carousel.addEventListener('touchmove', (event) => {
              <iframe class="frame2" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02JQzFLvPALfijmT1egHcc5C1jRpPE6YcEStr2o5mgKnpQxzmVjZPVNpMVmTFsYgi5l%26id%3D61573062737125&show_text=true&width=auto" width="98%" height="700px" style="border:none;overflow:show" scrolling="yes" frameborder="0" allowTransparency="true" title="Facebook Page"></iframe>
             </div>
 </div>
+    <div id="boholpopup" class="boholpopup">
+  <div class="boholpopup-content">
+    <button type="button" class="btn cancel" id="closeBohol">❌</button>
+    <h2>Bohol Diving Adventures</h2>
+    <p>Witness sea turtles and even whale sharks in Bohol.</p>
+    <p><strong>Fun Dive: ₱1,800 | Open Water Course: ₱19,500</strong></p>
+    
+    <div class="boholpopup-images">
+      <img src="bohol.jpg" alt="Dive Spot 1">
+      <img src="dive1.jpg" alt="Dive Spot 2">
+      <img src="shipwreck.jpg" alt="Dive Spot 3">
+    </div>
+    
+    <a href="https://boholdivingadventures.com" class="boholpopup-btn">Check Offers Now</a>
+  </div>
+</div>
+<style>
+.boholpopup {
+  z-index: 999;
+  display: none; 
+  position: fixed;
+  right: 0;
+  top: 10%;
+  justify-content: center; align-items: center;
+  background-image: url('fish3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.boholpopup-content {
+     background: rgba(243, 151, 3, 0.218); 
+  backdrop-filter: blur(6px);
+  padding: 20px;
+  color:#fff;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+.boholpopup-content h2{
+    color:rgb(5, 85, 5);
+    font-family: cursive;
+    text-shadow: 2px 2px 5px white;
+}
+.boholpopup-images img {
+  width: 150px; margin: 5px;
+  height: 100px;
+}
+
+.boholpopup-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #7aff33, #136802);
+  color: #fff;
+  text-shadow: 2px 2px 5px black; text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    animation: pulse 1.5s infinite;
+}
+
+#closeBohol {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+  var boholpopup = document.getElementById("boholpopup");
+  var closeBanner = document.getElementById("closeBohol");
+
+  window.addEventListener("scroll", function() {
+    setTimeout(function() {
+      boholpopup.style.display = "flex";
+    }, 5000);
+  });
+
+  closeBanner.addEventListener("click", function() {
+    boholpopup.style.display = "none";
+  });
+
+  window.addEventListener("click", function(e) {
+    if (e.target === boholpopup) {
+      boholpopup.style.display = "none";
+    }
+  });
+</script>
+ 
 <div class="article">
         
                 
@@ -713,3 +807,4 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 </footer>
 </html>
+
