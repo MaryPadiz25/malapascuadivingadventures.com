@@ -515,24 +515,31 @@ carousel.addEventListener('touchmove', (event) => {
   cursor: pointer;
 }
 </style>
-
 <script>
   var boholpopup = document.getElementById("boholpopup");
   var closeBanner = document.getElementById("closeBohol");
+    var popupClosed = false;
 
   window.addEventListener("scroll", function() {
-    setTimeout(function() {
-      boholpopup.style.display = "flex";
-    }, 5000);
+    if (!popupClosed) {
+      setTimeout(function() {
+        if (!popupClosed) { // double check before showing
+          boholpopup.style.display = "flex";
+        }
+      }, 5000);
+    }
   });
 
-  closeBanner.addEventListener("click", function() {
+ closeBanner.addEventListener("click", function() {
     boholpopup.style.display = "none";
+    popupClosed = true; // mark as closed permanently
   });
 
+  // Optional: close popup if clicking outside content
   window.addEventListener("click", function(e) {
     if (e.target === boholpopup) {
       boholpopup.style.display = "none";
+      popupClosed = true; // also mark as closed
     }
   });
 </script>
@@ -806,5 +813,6 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 </footer>
 </html>
+
 
 
